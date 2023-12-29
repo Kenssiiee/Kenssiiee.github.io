@@ -1,0 +1,174 @@
+
+.td{
+    height: 50vh;
+	.method.check[type="checkbox"] {
+    display:none;
+}	
+.btn {
+  display: inline-block; /* Строчно-блочный элемент */
+  background: #8C959D; /* Серый цвет фона */
+  color: #fff; /* Белый цвет текста */
+  padding: 1rem 1.5rem; /* Поля вокруг текста */
+  text-decoration: none; /* Убираем подчёркивание */
+  border-radius: 3px; /* Скругляем уголки */
+ }
+
+.method.check[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../images/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+.button{
+  letter-spacing: 0.5px;
+  line-height: 52px;
+  border-radius: 40px;
+  background: #b12b2b;
+}
+
+.method.check[type="checkbox"]:checked + label span {
+    background:url(../images/check_radio_sheet.png) -19px top no-repeat;
+}
+
+/* использование radio */
+.method.rad[type="radio"] {
+    display:none;
+}	
+
+.method.rad[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../images/check_radio_sheet.png) -38px top no-repeat;
+    cursor:pointer;
+}
+
+.method.rad[type="radio"]:checked + label span {
+    background:url(../images/check_radio_sheet.png) -57px top no-repeat;
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1.15)
+  }
+  70% {
+    transform: scale(.9)
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  70% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-3px);
+  }
+  70% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes spinIn {
+  0% {
+    opacity: 0;
+    transform: rotate(180deg) scale(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    transform: rotate(360deg) scale(1.15)
+  }
+  70% {
+    transform: rotate(360deg) scale(.9)
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:900');
+
+body, html {
+  height: 100%;
+  background-color: #3498db;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 30pt;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+#showcase_table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+#showcase_cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.bounce_in_animation {
+  text-align: left;
+  display: inline-block;
+  width: 350px;
+}
+.btn {
+  display: inline-block; /* Строчно-блочный элемент */
+  background: #8C959D; /* Серый цвет фона */
+  color: #fff; /* Белый цвет текста */
+  padding: 1rem 1.5rem; /* Поля вокруг текста */
+  text-decoration: none; /* Убираем подчёркивание */
+  border-radius: 3px; /* Скругляем уголки */
+ }
+ .button{
+  letter-spacing: 0.5px;
+  line-height: 52px;
+  border-radius: 40px;
+  background: #b12b2b;
+}
+

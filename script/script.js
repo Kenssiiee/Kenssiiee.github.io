@@ -1,0 +1,5 @@
+rating.create({
+
+    'selector':'#rating'
+  
+  });

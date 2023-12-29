@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pizza Alex</title>
+        <link href="./css/style.css" rel="stylesheet">
+        <script src="./script/rating.js">
+            rating.create({
+
+                'selector':'#rating'
+
+            });
+        </script> 
+        <link href="./css/st.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="./script/jquery.fittext.js"></script>
+        <script>
+          jQuery("#responsive_headline").fitText();
+        </script>
+    </head>
+    <body background="../img/log.jpg">
+        
+            <table class="table_center_by_css"   width=1000 hight=1100>
+                <tr>
+                    <td colspan= "3"><h1 class="mtxt">Пицца пеперони</h1> <a href="./menu.html" class="btn"> назад</a></a></td>
+                </tr>
+                <tr>
+                    <td> <img class = "td" src="./img/pizza pepirony.jpg" alt="">
+                        <h1 class="mtxt">Цена</h1> <h1 class="mtxt" id="elementToChange">600</h1> </td>
+                    <td colspan="2"><a href="./zak.html" class="btn"> Заказать </a></td>
+                
+                </tr>
+                <tr>
+                    <td><h1>Выберите размер</h1> </td>
+                    <td> <form>
+                        <input type="radio" id="r1" name="rr" class="method rad" checked/>
+                        <label for="r1"><span></span>Большая</label><br>
+                        <input type="radio" id="r2" name="rr" class="method rad"/>
+                        <label for="r2"><span></span>Маленькая</label>
+                    </form> </td>
+                    <td> </td>
+
+                </tr>
+
+                
+              </table>
+              <style>
+                .table_center_by_css {
+                width: 800px;
+                height: 1000px;
+                margin: auto;
+                }
+                </style>
+                  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+                  <script src="jquery.fittext.js"></script>
+                 <script type="text/javascript">
+                     $("#fittext1").fitText();
+                     $("#fittext2").fitText(1.2);
+                     $("#fittext3").fitText(1.1, { minFontSize: '40px', maxFontSize: '75px' });
+                 </script>
+
+                 <script>
+                    document.getElementById('r1').onchange = () => {
+                        document.getElementById("elementToChange").textContent = "600";
+                    };
+
+                    document.getElementById('r2').onchange = () => {
+                        document.getElementById("elementToChange").textContent = "500";
+                    };
+
+                 </script>
+
+        
+
+
+        
+
+    </body>
+
+
+    </html
